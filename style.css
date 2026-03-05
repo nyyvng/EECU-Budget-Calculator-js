@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 main {
@@ -60,6 +61,8 @@ nav {
     background-color: var(--secondary-color);
     width: 100%;
     padding: 1em;
+    justify-content: space-around;
+
 
     & > a {
         display: flex;
@@ -67,7 +70,41 @@ nav {
         gap: 20px;
 
     }
+
+
 }
+
+.progressBar > button {
+    gap: 10px;
+    display: flex;
+    flex: row;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    font-size: 20px;
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.steps {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
 
 .income>form>input {
     display: flex;
@@ -98,25 +135,52 @@ nav {
     border-radius: 10px;
     padding: 0.5rem;
     border: none;
+    margin-left: 15em;
 }
 
-/* Put Flex direction on the slip two buttons*/
+/* Put Flex direction on the split two buttons*/
 .income-section1 {
     display: flex;
     flex-direction: row;
     align-items: space-between;
     gap: 1em;
+    
 }
+
+.income-section1>input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background: #FFF;
+    border: 2px solid #A5A5A5;
+    border-radius: 10px;
+}
+
 
 .income-section2 {
     display: flex;
     flex-direction: row;
     align-items: space-between;
     gap: 1em;
+    
 }
+
+.income-section2>input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background: #FFF;
+    border: 2px solid #A5A5A5;
+    border-radius: 10px;
+}
+
+
 
 .right-side {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    
 }
